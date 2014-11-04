@@ -1,19 +1,23 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{F416898E-B16C-618A-D7FA-B8BC4B100CE8}") = "NetTank", "Assembly-CSharp.csproj", "{EE1190E4-C07F-4D39-55E8-9EA51A5EADDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{EE1190E4-C07F-4D39-55E8-9EA51A5EADDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1190E4-C07F-4D39-55E8-9EA51A5EADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1190E4-C07F-4D39-55E8-9EA51A5EADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1190E4-C07F-4D39-55E8-9EA51A5EADDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -31,4 +35,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
