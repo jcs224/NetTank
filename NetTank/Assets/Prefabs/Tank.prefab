@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   rotationsSpeed: 60
+  bulletPrefab: {fileID: 100000, guid: 14a7eb0cc693e4fe983f5eda4c140ce7, type: 2}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

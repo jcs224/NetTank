@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   rotationsSpeed: 60
+  bulletPrefab: {fileID: 100000, guid: 14a7eb0cc693e4fe983f5eda4c140ce7, type: 2}
 --- !u!1001 &467687317
 Prefab:
   m_ObjectHideFlags: 0
@@ -939,8 +940,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110257324}
-  m_LocalRotation: {x: .5, y: 0, z: 0, w: .866025388}
-  m_LocalPosition: {x: 0, y: 9.91277981, z: -8.38970184}
+  m_LocalRotation: {x: -.000160245705, y: -.840604305, z: .541649759, w: -.000249457778}
+  m_LocalPosition: {x: 3.1688633, y: 11.3511133, z: 6.43483114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
