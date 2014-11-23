@@ -6,6 +6,9 @@ public class TankMovement : MonoBehaviour
 	public float speed = 10f;
 	public float rotationsSpeed = 10f;
 	public GameObject bulletPrefab;
+	public Transform bulletFirePosition;
+
+
 
 	// Use this for initialization
 	void Start () 
@@ -27,7 +30,7 @@ public class TankMovement : MonoBehaviour
 		if(Input.GetButtonUp("Fire1"))
 		{
 			//Fire Weapon
-			GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation);
+			GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, bulletFirePosition.transform.position, transform.rotation);
 		}
 	}
 }

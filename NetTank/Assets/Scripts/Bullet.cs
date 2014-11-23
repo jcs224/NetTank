@@ -16,4 +16,13 @@ public class Bullet : MonoBehaviour
 	{
 		transform.position += speed * transform.forward * Time.deltaTime;
 	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		if(col.tag == "Crate")
+		{
+			Debug.Log("Hit");
+			Destroy(gameObject);
+		}
+	}
 }
