@@ -21,5 +21,6 @@ public class Damagable : MonoBehaviour
 	{
 		if(health == 0)
 			return true;
+		return false;
 	}
 }
