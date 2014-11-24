@@ -40,8 +40,8 @@ public class TankMovement : MonoBehaviour
             if (Input.GetButtonUp("Fire1"))
             {
                 //Fire Weapon
-                GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, bulletFirePosition.transform.position, transform.rotation);
-
+                //GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, bulletFirePosition.position, transform.rotation);
+                Network.Instantiate(bulletPrefab, bulletFirePosition.position, transform.rotation,0);
             }
         }
     }
