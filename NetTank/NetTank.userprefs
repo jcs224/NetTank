@@ -1,8 +1,16 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TankMovement.cs">
     <Files>
       <File FileName="Assets\Scripts\TankMovement.cs" Line="19" Column="4" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TankMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Bullet.cs" Line="26" Column="4" />
+      <File FileName="Assets/Scripts/TankMovement.cs" Line="11" Column="1" />
+>>>>>>> ceb5d0a00690413a5e451b939cf89af9a19182b6
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
