@@ -6,6 +6,8 @@ public class ConnectGui : MonoBehaviour
     private string connectToIP = "127.0.0.1";
     private int connectPort = 25001;
 
+    public GameObject tank;
+    private bool createdTank = false;
 
     void Start() 
     {
@@ -52,6 +54,12 @@ public class ConnectGui : MonoBehaviour
             {
                 GUILayout.Label("Connection status: Client!");
                 GUILayout.Label("Ping to server: " + Network.GetAveragePing(Network.connections[0]));
+
+                if (createdTank == false)
+                {
+                    Network.Instantiate(tank, Vector3.zero, Quaternion.identity, 0);
+                    createdTank = true;
+                }
             }
             else if (Network.peerType == NetworkPeerType.Server)
             {
@@ -60,6 +68,13 @@ public class ConnectGui : MonoBehaviour
                 if (Network.connections.Length >= 1)
                 {
                     GUILayout.Label("Ping to first player: " + Network.GetAveragePing(Network.connections[0]));
+                }
+
+
+                if (createdTank == false)
+                {
+                    Network.Instantiate(tank, Vector3.zero, Quaternion.identity, 0);
+                    createdTank = true;
                 }
             }
 

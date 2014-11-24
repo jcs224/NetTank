@@ -15,17 +15,23 @@ public class TankMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.position += Input.GetAxis("Vertical") * transform.forward * 
-			speed * Time.deltaTime;
-	
-		float rotation  = Input.GetAxis("Horizontal") * 
-			rotationsSpeed * Time.deltaTime;
-
-		transform.Rotate(Vector3.up,rotation);
-
-		if(Input.GetAxis("Fire1") > 0.5f)
+		if(networkView.isMine)
 		{
-			//Fire Weapon
+
+			transform.position += Input.GetAxis("Vertical") * transform.forward * 
+				speed * Time.deltaTime;
+		
+			float rotation  = Input.GetAxis("Horizontal") * 
+				rotationsSpeed * Time.deltaTime;
+
+			transform.Rotate(Vector3.up,rotation);
+
+
+			if(Input.GetAxis("Fire1") > 0.5f)
+			{
+				//Fire Weapon
+			}
+
 		}
 	}
 }
