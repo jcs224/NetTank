@@ -3,39 +3,26 @@ using System.Collections;
 
 public class TankMovement : MonoBehaviour 
 {
-	public float speed = 10f;
-	public float rotationsSpeed = 10f;
+	public float thrust = 100f;
+	public float rotationSpeed = 200f;
+
 	public GameObject bulletPrefab;
 	public Transform bulletFirePosition;
 
-
-
-	// Use this for initialization
+	
 	void Start () 
 	{
 	
 	}
-	
-	// Update is called once per frame
+
+
     void Update()
     {
         if (networkView.isMine)
         {
-
-            transform.position += Input.GetAxis("Vertical") * transform.forward *
-                speed * Time.deltaTime;
-
-            float rotation = Input.GetAxis("Horizontal") *
-                rotationsSpeed * Time.deltaTime;
+            float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
 
             transform.Rotate(Vector3.up, rotation);
-
-
-            if (Input.GetAxis("Fire1") > 0.5f)
-            {
-                //Fire Weapon
-            }
-
 
             if (Input.GetButtonUp("Fire1"))
             {
@@ -45,4 +32,20 @@ public class TankMovement : MonoBehaviour
             }
         }
     }
+
+
+
+	void FixedUpdate()
+	{
+		if (networkView.isMine)
+		{
+			rigidbody.AddForce( (transform.forward * thrust) * Input.GetAxis("Vertical") );
+		}
+	}
 }
+
+
+
+
+
+
