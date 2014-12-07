@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifetime: 3
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

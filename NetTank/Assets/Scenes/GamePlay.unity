@@ -86,12 +86,14 @@ GameObject:
   - 65: {fileID: 116666132}
   - 23: {fileID: 116666131}
   - 54: {fileID: 116666135}
+  - 148: {fileID: 116666137}
+  - 114: {fileID: 116666136}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &116666131
 Renderer:
@@ -158,11 +160,36 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!114 &116666136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 627985746}
+  m_GameObject: {fileID: 116666130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ab399b7c8662b4c9dba9800827233a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!148 &116666137
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 627985746}
+  m_GameObject: {fileID: 116666130}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 116666134}
+  m_ViewID:
+    m_ID: 2
+    m_Type: 1
 --- !u!1 &171297342
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +269,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_Constraints
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_Type
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
   m_RootGameObject: {fileID: 828704509}
@@ -259,12 +310,14 @@ GameObject:
   - 65: {fileID: 531729576}
   - 23: {fileID: 531729575}
   - 54: {fileID: 531729579}
+  - 148: {fileID: 531729581}
+  - 114: {fileID: 531729580}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &531729575
 Renderer:
@@ -331,11 +384,36 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!114 &531729580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 1423503386}
+  m_GameObject: {fileID: 531729574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ab399b7c8662b4c9dba9800827233a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!148 &531729581
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 1423503386}
+  m_GameObject: {fileID: 531729574}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 531729578}
+  m_ViewID:
+    m_ID: 3
+    m_Type: 1
 --- !u!1001 &627985746
 Prefab:
   m_ObjectHideFlags: 0
@@ -375,6 +453,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_Constraints
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_ID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_Type
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
   m_RootGameObject: {fileID: 116666130}
@@ -392,12 +494,14 @@ GameObject:
   - 65: {fileID: 828704511}
   - 23: {fileID: 828704510}
   - 54: {fileID: 828704514}
+  - 148: {fileID: 828704516}
+  - 114: {fileID: 828704515}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &828704510
 Renderer:
@@ -464,11 +568,36 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
+--- !u!114 &828704515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 467687317}
+  m_GameObject: {fileID: 828704509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ab399b7c8662b4c9dba9800827233a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!148 &828704516
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434,
+    type: 2}
+  m_PrefabInternal: {fileID: 467687317}
+  m_GameObject: {fileID: 828704509}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 828704513}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
 --- !u!1 &1207531390
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +699,30 @@ Prefab:
     - target: {fileID: 400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_Constraints
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: b56eab5ebacb01248807152157e11434, type: 2}
+      propertyPath: m_ViewID.m_Type
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56eab5ebacb01248807152157e11434, type: 2}
